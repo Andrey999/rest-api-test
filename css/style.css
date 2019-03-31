@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, menu, dir {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.wrapper {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+/* ul  block */
+.image__block {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+/* all li in ul block */
+.image__block > li {
+    width: 21%;
+    position: relative;
+    margin-bottom: 20px;
+}
+/* hover in all li*/
+.image__link-wrapper {
+    background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 200px;
+}
+
+.description {
+    top: 55px;
+    left: 95px;
+    z-index: 15;
+}
+
+.btn_delete {
+    top: 100px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    width: 130px;
+    padding: 10px 0;
+    left: 70px;
+    z-index: 15;
+}
+/* all tag a in li */
+li > a {
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s ease;
+    opacity: 0;
+}
+/* hover on li all classes hover too */
+li:hover > .image__link-wrapper,
+li:hover > .description,
+li:hover > .btn_delete {
+    opacity: 1;
+}
+/* all image in li */
+.image__block > li > img {
+    width: 100%;
+    height: 200px;
+}
+/* button  download */
+.button__download {
+    display: block;
+    margin: 40px auto;
+    height: 60px;
+    padding: 0 40px;
+    background-color: dodgerblue;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* button disabled */
+.disabled {
+    opacity: .3;
+}
