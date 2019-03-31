@@ -1,5 +1,9 @@
 # rest-api-test-task
-* Download or clone from GitHub
-* Install Node Modules: npm install
-* Run server:  npm run dev
-* Server listening port:8000
+* Загрузить или клонировать с GitHub
+* Установить npm модули: npm install
+* Запустить сервер:  npm run dev
+* Сервер слушает порт: 8000
+
+Тестовое задание начал в четверг, время потраченное на:
+* Проектирование: 2 часа
+* Программирование и документация: 3 дня
